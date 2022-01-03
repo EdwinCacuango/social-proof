@@ -1,1 +1,98 @@
 @import "variables";
+@import "globals";
+
+.presentation {
+  max-width: 69.3125rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8.675rem;
+  align-items: center;
+  justify-content: center;
+}
+.tittle h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $very-dark-magenta;
+}
+.review-container {
+  width: 33.75rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.review {
+  display: flex;
+  justify-content: space-evenly;
+  width: 27.875rem;
+  margin: 1rem 0;
+  background-color: $light-grayish-magenta;
+  border-radius: 6px;
+  .starts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    color: $very-dark-magenta;
+    font-weight: 700;
+  }
+}
+
+.review:nth-child(2) {
+  align-self: center;
+  margin: 0;
+}
+.review:nth-child(3) {
+  align-self: flex-end;
+}
+
+#testimonials {
+  margin-top: 3.8125rem;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 1.875rem;
+    color: $white;
+    height: 16.625rem;
+  }
+
+  li {
+    max-width: 21.875rem;
+    max-height: 14.5rem;
+    background-color: $very-dark-magenta;
+    padding: 2rem 1.875rem;
+    border-radius: 10px;
+  }
+  li:nth-child(2) {
+    align-self: center;
+  }
+  li:nth-child(3) {
+    align-self: end;
+  }
+  .information-profile {
+    display: flex;
+    object-fit: contain;
+    .image-profile {
+      width: 2.5625rem;
+      margin-right: 1.4375rem;
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+    .name-profile p {
+      margin: 0;
+    }
+    .name-profile p:nth-child(2) {
+      color: $soft-pink;
+    }
+  }
+  .description{
+      font-size: 0.75rem;
+  }
+}
