@@ -1,5 +1,7 @@
 html{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 *, *::after, *::before{
     box-sizing: inherit;
@@ -11,15 +13,9 @@ body{
     color: $dark-grayish-magenta;
     line-height: 1.6;
 }
-
-main{   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8rem 10.375rem 6.25rem;
+main{
+    display: grid;
 }
-
 
 h1{
     margin: 0;
@@ -28,4 +24,8 @@ h1{
 ul{
     margin:0;
     padding:0;
+}
+
+li{
+    list-style:none
 }

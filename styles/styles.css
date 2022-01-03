@@ -1,6 +1,8 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *, *::after, *::before {
@@ -17,6 +19,45 @@ body {
 }
 
 main {
+  display: -ms-grid;
+  display: grid;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.bg-pattern,
+.card {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.bg-pattern {
+  overflow: hidden;
+}
+
+.bg-pattern img {
+  max-width: 100%;
+}
+
+#second-item {
+  margin-top: 15%;
+  margin-left: 25%;
+}
+
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,13 +74,8 @@ main {
   padding: 8rem 10.375rem 6.25rem;
 }
 
-h1 {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
+.bg-pattern img:first-child {
+  position: absolute;
 }
 
 .presentation {
