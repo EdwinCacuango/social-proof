@@ -1,7 +1,6 @@
 @import "variables";
 @import "globals";
 
-
 .bg-pattern,
 .card{
     grid-column: 1;
@@ -13,6 +12,10 @@
         max-width: 100%;
     }
 }
+.bg-pattern img:first-child {
+  position: absolute;
+}
+
 #second-item {
     margin-top: 15%;
     margin-left: 25%;
@@ -24,11 +27,6 @@
     align-items: center;
     padding: 8rem 10.375rem 6.25rem;
 }
-
-.bg-pattern img:first-child {
-  position: absolute;
-}
-
 .presentation {
   max-width: 69.3125rem;
   display: grid;
@@ -124,3 +122,5 @@
     font-size: 0.75rem;
   }
 }
+
+@import "mobile";
