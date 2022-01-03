@@ -279,9 +279,11 @@ li {
   }
   #testimonials ul {
     display: block;
+    height: auto;
   }
   #testimonials li {
     margin: 1.25rem 0;
+    width: auto;
   }
   #testimonials .description {
     font-size: 0.9375rem;
